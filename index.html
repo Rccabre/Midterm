@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<title>Personal Web</title>
+		<link rel="stylesheet"href="http://fonts.googleapis.com/css?family=Ubuntu:400,700">
+		<link href="css/lightbox.css" rel="stylesheet">
+		<link rel="stylesheet"type="text/css"href="style.css">
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+				
+</head>
+<body>
+		<nav> 
+			<div id="logo">
+				<a class=""href="index.html">
+				<img src="logo.png">
+			</div>
+
+			<a class="scroll"href="#intro">Intro</a>
+			<a class="scroll"href="#portfolio">Portfolio</a>
+			<a class="scroll"href="#contact">Contact</a>
+		</nav>
+<section id="intro">
+		<h1>Roberto Cabrera is a Graphic and Web Designer born and raised in Ecuador,
+		currently living in New York. He began his journey as a graphic design student at Bronx Community College in 2011,
+		where he earned an associate's degree in Digital and Graphic Arts in 2013. His creative aptitude led him receive the prestigious J. Kling Award for Excellence in Art. He is currently studying at The City College of New York City,
+		majoring in Digital Design to complete his bachelor's degree. Roberto is fluent in numerous design programs,
+		including Indesign,
+		Illustrator,
+		and PhotoShop,
+		as well as various computer languages,
+		such as HTML,
+		CSS,
+		and JavaScript . His trademark is turning complex and difficult ideas into simple,
+		yet beautiful,
+		designs. When not manipulating pixels or coding for web design,
+		you can find Roberto on a soccer pitch or in the gym. </h1>
+</section>
+<section id="pic">
+</section>
+
+<section id="portfolio">
+	<div class = "text">
+		<h2> Posters</h2> 
+		<p>This are a series of ad posters that </br>
+		I created to show the meaning of Graphic Design.</p>
+	</div>
+
+	<div class="slider autoplay">
+    	<div><a href="images/poster1.jpg" data-lightbox="image-1" data-title="What is Graphic Design"><img src="images/poster1.1.jpg" ></a>What is Graphic Design</div>
+			<div><a href="images/poster2.jpg" data-lightbox="image-2" data-title="Poster"><img src="images/poster2.1.jpg" ></a>Poster 2</div>
+			<div><a href="images/poster3.jpg" data-lightbox="image-3" data-title="Poster"><img src="images/poster3.1.jpg" ></a>Poster 3</div>
+			<div><a href="images/poster4.jpg" data-lightbox="image-4" data-title="Poster"><img src="images/poster4.1.jpg"></a>Poster 4</div>
+    </div>
+
+</section>
+<section id="d">
+			<ul>
+				<p>Part Designer</p>
+				<li> InDesign</li>
+				<li> Illustrator</li>
+				<li> PhotoShop</li>
+			</ul>
+			<ul>
+				<p>Part Coder<p>
+				<li>Web Design</li>
+				<li>HTML</li>
+				<li>CSS</li>
+			</ul>
+</section>
+	<section id="contact">646.305.1677</br>
+	roberto.cabrera0120@gmail.com</br>
+	Roberto Cabrera</br>
+	Graphic and Web Designer<br>
+	Copyright 2014
+	</section>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="js/lightbox.js"></script>
+
+
+<script>
+
+</script>
+<script type="text/javascript">
+$(document).ready( function(){
+	$('.autoplay').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000
+});
+	$('.slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+  console.log(nextSlide);
+});
+	    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    });
+
+	    $('.js.slider').on('click', function(e) {
+  		console.log(e);
+});
+        
+});
+</script>
+</body>
+</html>
